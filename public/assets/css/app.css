@@ -1,0 +1,58 @@
+.primary-text {
+    color: #1B4A64;
+}
+
+.primary-bg {
+    background-color: #1B4A64;
+}
+
+.secondary-text {
+    color: #FD5308;
+}
+
+.secondary-bg {
+    background-color: #FD5308;
+}
+  
+.gallery-cell {
+    width: 66%;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.hero-bg {
+    background-image: url('/assets/images/contact/hero-bg.svg');
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-bg-blue {
+    background-image: url('/assets/images/gallery/hero-bg.svg');
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.manual-gap {
+    gap: 50px;
+}
+
+.project-image {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .manual-gap {
+        gap: 0px;
+    }
+}
